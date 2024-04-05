@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
+
+:root {
+  --background-color: #151621;
+  --card-color: #1a1c2c;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gafata", sans-serif;
+  background-color: var(--background-color);
+  color: rgb(238, 211, 211);
+  padding-bottom: 300px;
+}
+/*Navigation Styling*/
+.navigation_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 80px;
+}
+.left_nav p {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.right_nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Card Styling */
+.card_container {
+  padding: 0 80px;
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  height: 90px;
+  background-color: var(--card-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.card p {
+  margin: 0;
+}
+.card p:nth-child(1) {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.card p:nth-child(2) {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.card p:nth-child(3) {
+  color: rgb(160, 128, 128);
+}
+
+/* Chart Styling */
+.chart_container {
+  padding: 0 80px;
+}
+.chart {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  height: 100px;
+  padding: 1px 20px;
+}
+.chart p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.chart p:nth-child(2) {
+  margin-top: 0px;
+  color: rgb(160, 128, 128);
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+/* form container */
+.form_container {
+  display: grid;
+  place-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form textarea,
+select {
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 16px;
+}
+select option {
+  padding: 20px;
+  color: black;
+}
+.form textarea {
+  max-width: 600px;
+  max-height: 150px;
+  height: 150px;
+  min-width: 600px;
+}
+input[type="file"] {
+  border: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 35%;
+  height: 40px;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 200ms linear;
+}
+button:hover {
+  border-radius: 0;
+  background-color: rgb(117, 117, 216);
+  color: white;
+}
+img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.added_container {
+  border: 1px solid white;
+  height: auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.added_container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.added_container p {
+  margin: 0;
+}
+input[type="file"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
