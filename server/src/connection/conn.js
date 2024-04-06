@@ -1,11 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config();
 import mongoose from "mongoose";
-
-const URL =
-  "mongodb+srv://achyut777thapa:xPwmljS4i1GrMcGT@cluster0.or2jkvo.mongodb.net/Ecommerce_Website?retryWrites=true&w=majority&appName=ecommerce";
-
 mongoose
-  .connect(URL)
+  .connect(process.env.URI)
   .then(() => console.log("Connected to database Successfully."))
   .catch((Error) =>
     console.log(`Error while connecting to database: ${Error}.`)
   );
+// mongodb://127.0.0.1:27017/EcommerceWebsite

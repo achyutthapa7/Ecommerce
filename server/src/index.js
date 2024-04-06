@@ -1,6 +1,5 @@
 import dotenv from "dotenv";
 dotenv.config();
-import multer from "multer";
 import "./connection/conn.js";
 import express from "express";
 import cors from "cors";

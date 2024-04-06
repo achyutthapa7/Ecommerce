@@ -14,6 +14,7 @@ export default async function login(req, res) {
     const isVerify = await bcrypt.compare(password, userExist.password);
     if (isVerify) {
       const token = jwt.sign({ _id: userExist._id }, process.env.SECRET_KEY);
+
       res.cookie("jwt", token);
       return res
         .status(200)
